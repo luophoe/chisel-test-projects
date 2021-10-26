@@ -1,3 +1,3 @@
 # function
 - function to use def to write a function
-- make use of Scala function whil writing Chisel code
+- to test how to make use of Scala function while writing Chisel code and inspect what the generated code will be
