@@ -1,0 +1,25 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~ManyDynamicElementVecFir|ManyDynamicElementVecFir>io_out",
+    "sources":[
+      "~ManyDynamicElementVecFir|ManyDynamicElementVecFir>io_consts_1",
+      "~ManyDynamicElementVecFir|ManyDynamicElementVecFir>io_consts_0",
+      "~ManyDynamicElementVecFir|ManyDynamicElementVecFir>io_in"
+    ]
+  },
+  {
+    "class":"logger.LogLevelAnnotation",
+    "globalLogLevel":{
+      
+    }
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"generated/ManyDynamicElementVecFir"
+  }
+]
