@@ -8,4 +8,5 @@
 3. decade_counter
 4. function
 5. RisingMooreFsm
-6. ManyDynamicElementVecFir
+6. Mux4_2
+7. ManyDynamicElementVecFir
