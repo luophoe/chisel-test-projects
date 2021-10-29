@@ -1,6 +1,6 @@
 # chisel-test-projects
 - Chisel test projects for research purposes with its generated Verilog files.  
-- Use Ubuntu and chisel-template (https://github.com/freechipsproject/chisel-template) to run and generate.
+- Use Ubuntu and chisel-template structure (https://github.com/freechipsproject/chisel-template) to run and generate.
 - Use vcs to simulate and debug.
 - Contained projects are (listed form easy to difficult):
 1. decoder
