@@ -10,3 +10,4 @@
 5. RisingMooreFsm
 6. Mux4_2
 7. ManyDynamicElementVecFir
+- The name.scala and the orig_name.v files are written files, the name.v, name.anno.json, and name.fir files are generated files
