@@ -27,3 +27,43 @@ module decade_counter
             out <= out - 1;
         end
 endmodule
+
+module decade_counter_testbench
+  #(parameter SIZE = 4);
+  reg clk, ld_n, cle_n, ud;
+  reg [SIZE - 1:0] ld_data;
+  wire [SIZE - 1:0] out;
+  
+decade_counter u_decade_counter(clk, ld_n, cle_n, ud, ld_data, out);
+  initial
+    begin
+      clk = 1'b0;
+      forever
+        #5 clk = ~ clk;
+    end
+  
+  initial
+    begin
+      //test
+      ld_n = 0; // low active signal
+      cle_n = 1; // low active signal
+      ld_data = 0;
+      ud = 1;
+      #10 ld_n = 1;
+      
+      #100 cle_n = 0;
+      ud = 0;
+      #5 cle_n = 1;
+      
+      #100 ld_n = 0;
+      ld_data = 6;
+      #5 ld_n = 1;
+      
+      #100 $stop;
+    end
+  
+  always
+    @(out)
+      $display("At time ", $time, ", counter output is ", out);
+endmodule
+      
