@@ -17,3 +17,27 @@ module decoder(
       default :   out = 4'b0;
     endcase
 endmodule
+
+module decoder_testbench();
+  reg [1:0] in;
+  wire [3:0] out;
+  
+decoder u_decoder(in, out);
+  initial
+    begin
+      in = 2'b00;
+      #10 in = 2'b00;
+      #10 in = 2'b10;
+      #10 in = 2'b01;
+      #10 in = 2'b11;
+      #10 in = 2'b00;
+      #10 in = 2'b01;
+      #10 in = 2'b11;
+      
+      #10 $stop;
+    end
+  
+  always
+    @(in or out)
+      $display("At time ", $time, ", input is %b, output is $b", in, out);
+endmodule
