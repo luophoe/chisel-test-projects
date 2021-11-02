@@ -4,3 +4,4 @@
 ![image](https://user-images.githubusercontent.com/60077499/138822105-a98007d0-ac9f-446a-b513-5b4445ea10a0.png)  
 ![image](https://user-images.githubusercontent.com/60077499/138822154-3673baf9-7921-4bb7-a9ef-afd5ccafc8be.png)  
 - by making use of generators not instances, the example shows the special property of Chisel and how it is considered more efficient in these cases
+- The name.scala file is the written Chisel file for testing and generation, the name.v, name.anno.json, and name.fir files are generated Verilog and transfer files, and the name_visualizer file is the files for generating visual graphs to represent the circuit for purpose of comparison between different types of Fir Filter.
