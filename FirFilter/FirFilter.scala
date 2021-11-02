@@ -1,3 +1,9 @@
+package test
+
+import chisel3._
+import chisel3.util._
+import chisel3.experimental._
+
 // Generalized FIR filter parameterized by the convolution coefficients
 class FirFilter(bitWidth: Int, coeffs: Seq[UInt]) extends Module {
   val io = IO(new Bundle {
