@@ -13,6 +13,6 @@
 5. RisingMooreFsm
 6. Mux4_2
 7. ManyDynamicElementVecFir
-8. FirFilter
+8. ##FirFilter##
 
 - The name.scala file is the written Chisel file for testing and generation, the name.v, name.anno.json, and name.fir files are generated Verilog and transfer files, and the orig_name.v file is the written Verilog file for the purpose of comparison with the generated Verilog file
