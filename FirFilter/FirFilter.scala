@@ -19,6 +19,7 @@ class FirFilter(bitWidth: Int, coeffs: Seq[UInt]) extends Module {
 
   // Do the multiplies
   val products = VecInit.tabulate(coeffs.length)(i => zs(i) * coeffs(i))
+  // .tabulate is to create Vec of length n composed of the results of the given function applied over a range of integer values starting from 0
 
   // Sum up the products
   io.out := products.reduce(_ +& _)
